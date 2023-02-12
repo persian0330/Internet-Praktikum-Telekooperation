@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayProfileActivity">
+
+    <ImageView
+        android:id="@+id/Image_Avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="75dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+/>
+
+    <TextView
+        android:id="@+id/chatter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Image_Avatar"  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/btn_nor_down"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:id="@+id/Button_To_Direct_Message"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+
+        android:layout_marginTop="20dp"
+
+        android:text="Direct Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatter_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button_Block"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/btn_nor_down"
+        android:text="Block"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_To_Direct_Message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
